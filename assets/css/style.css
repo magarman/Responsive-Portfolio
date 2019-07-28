@@ -1,0 +1,181 @@
+
+* {
+    box sizing: border-box;
+}
+
+/* Allow my boxes to keep the same size regardles of whether 
+if padding/border/margin change. */
+
+body {
+    background-image: url("paper.gif");
+    background-color: #cccccc;
+}
+/*Header*/ 
+
+/*You had margin-left: auto; and margin-right: auto; and 
+it was useless*/
+
+#hyperlinks {
+    width: 96%;
+    height: 20 px;
+    /*Before watching video on Week 2 folder, I had margin to 400 px. 
+    The values below refer to 0 top, 0 right and 30 bottom*/
+    margin: 0 0 5px;
+    background: beige;
+    padding: 20px;
+    border-bottom: 1px solid grey;
+    overflow: auto;
+    /*z-index: 99; was on the video, but it didn't change my shell when I tried it*/
+    padding-bottom: 0%;
+}
+
+/*TIP: Margin set to "0 auto;" centers everything.*/
+
+/*A note on using width and max-width: assigning an element 
+a width property gives it its definitive, end-all-be-all width. 
+Like stating that "element X's width is Y". Assigning an element 
+the max-width property, however, is stating that "element X's 
+width CANNOT be MORE than Y, but CAN be LESS than Y". Thus, if/when 
+you assign an element just a max-width property, it will simply take 
+up as much space as necessary to wrap around the element(s) contained within it.*/
+
+#name {
+    color: beige;
+    font-size: 30px;
+    line-height: 90px;
+    font-weight: bold;
+    font-family: "Gill Sans", sans-serif;
+    background: teal;
+    height: 90 px;
+    width: 250 px;
+    float: left;
+    text-align: center
+}
+
+/* Initially, I had the following properties with different values and those did not 
+work, this came up as simple bold letters with a highlighted-like looking box. 
+#name {
+font-color: beige;
+font-size: 25px;
+font-family: Arial, Helvetica, sans-serif;
+}*/
+
+nav {
+    float: right;
+    margin-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: grey;
+}
+
+/* You could also style nav a or even nav a:first-child */
+
+h1, h2 {
+    font-family: "Gill Sans", sans-serif;
+}
+
+h1 {
+    font-size: 200%;
+    color: teal;
+    font-weight: 700;
+    margin-bottom: 20 px;
+    border-bottom: 1px solid grey;
+    /*Margin bottom didn't work to give some space between h2 and content below*/
+}   
+
+h2 {
+    color: teal;
+    font-weight: 500;
+    font-size: 22 px;
+}
+
+p {
+   font-family: "Gill Sans", sans-serif;
+   font-size: 20 px;
+   color: darkgray; 
+   margin-right: 35%;
+   font-size: 130%;
+}
+
+#main-box {
+    
+}
+
+.main-box {
+    padding-top: 15px;
+    background: beige;
+    margin: 0 0 40px 0;
+    width: 100%;
+    max-width: 950px;
+    border: 1 px solid grey;
+    margin-left: 25%;
+    float: right;
+}
+
+p {
+    bottom: 350px;
+    left: 50px;
+    width: 50%;
+    height: 100%;
+    width-max: 45 px;
+    margin-left: 40%;
+    margin-right: 5%;
+}
+
+footer {
+    clear: both;
+    border-top: 8px solid #4aaaa5;
+}
+.box {
+    width: 960px;
+    margin: 0 auto;
+    clear: both;
+}
+
+.project .text2 {
+    color: teal;
+    background: purple;
+    text-align: center;
+    bottom: 20px;
+    padding: 15px;
+    width: 100%;
+    line-height: 30px;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+.project {
+    display: inline-block;
+}
+
+/*I meant to organize two images per row, and add the text on top of each image, 
+but that became complex and I couldn't include that.
+video code:
+.auth-image {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    float: left;
+    margin: right;
+}*/
+
+#Couch-seal {
+    float: left;
+}
+/*Adding the float on the image, helped the paragraph on the index page to
+fit on the right hand side easily. Before then, it was being pushed down and 
+modifying margin/padding, etc, did not help.
+I also had a div wrapping this text, and then removed it.*/
+
+/*Google the meaning of this:
+.work {
+    width: 274px;
+    overflow: auto;
+    position: relative;
+    float: left;
+    margin: 20px 0 25px;
+}
+.work:nth-child(even) {
+    margin-right: 40px;
+}
+
+*/
