@@ -128,7 +128,7 @@ p {
     margin-left: auto;
     width: 100%;
     max-width: 960px;
-    height: 400px;
+    height: 500px;
 }
 
 p {
@@ -136,18 +136,25 @@ p {
     left: 50px;
     width: 50%;
     height: 100%;
+    width-max: 45 px;
     margin-left: 40%;
     margin-right: 5%;
     margin-top: 30px;
 }
 
-footer {
-    position: fixed;
-    background-color: #4aaaa5;
-    left: 0;
-    bottom: 0;
-    color: white;
-    margin-top: 15px;
+footer .box {
+    clear: both;
+    border-top: 8px solid #4aaaa5;
+    width: 100%
+}
+
+#form {
+    margin-left: 20px;
+}
+
+#form #message{
+    width: 500px;
+    height: 250px;
 }
 
 /*footer {
@@ -159,7 +166,6 @@ footer {
     color: white;
     text-align: center;
 }*/
-
 
 .box {
     width: 960px;
@@ -218,7 +224,7 @@ I also had a div wrapping this text, and then removed it.*/
 
 */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 725px) {
     /* The body's bg color will be #333 */
     body {
         background-color: #333;
@@ -231,5 +237,15 @@ I also had a div wrapping this text, and then removed it.*/
         margin: 5px;
         margin-top: 35px;
     }
-  
+    #form #message{
+        width: 250px;
+        height: 125px;
+    }
+    nav {
+        float: left;
+        margin-top: 30px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: grey;
+    }
+
 }
