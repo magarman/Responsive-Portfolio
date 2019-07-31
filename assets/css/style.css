@@ -73,14 +73,16 @@ h1, h2 {
     font-family: "Gill Sans", sans-serif;
 }
 
+
 h1 {
     font-size: 200%;
     color: teal;
     font-weight: 700;
     margin-bottom: 20 px;
-    border-bottom: 1px solid grey;
-    /*Margin bottom didn't work to give some space between h2 and content below*/
-}   
+    border-bottom: 1px solid lightgray;
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
 h2 {
     color: teal;
@@ -89,26 +91,44 @@ h2 {
 }
 
 p {
-   font-family: "Gill Sans", sans-serif;
-   font-size: 20 px;
-   color: darkgray; 
-   margin-right: 35%;
-   font-size: 130%;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 20 px;
+    color: darkgray; 
+    margin-right: 35%;
+    font-size: 130%;
+    margin-bottom: 30px;
 }
 
 #main-box {
     
 }
 
-.main-box {
+#main-box1 {
     padding-top: 15px;
     background: beige;
-    margin: 0 0 40px 0;
+    /*margin: 0 0 40px 0;*/
+    margin-left: auto;
     width: 100%;
-    max-width: 950px;
-    border: 1 px solid grey;
-    margin-left: 25%;
-    float: right;
+    max-width: 960px;
+    height: 600px;
+}
+
+#main-box2 {
+    padding-top: 15px;
+    background: beige;
+    margin-left: auto;
+    width: 100%;
+    max-width: 960px;
+    height: 800px;
+}
+
+#main-box3 {
+    padding-top: 15px;
+    background: beige;
+    margin-left: auto;
+    width: 100%;
+    max-width: 960px;
+    height: 400px;
 }
 
 p {
@@ -116,15 +136,31 @@ p {
     left: 50px;
     width: 50%;
     height: 100%;
-    width-max: 45 px;
     margin-left: 40%;
     margin-right: 5%;
+    margin-top: 30px;
 }
 
 footer {
-    clear: both;
-    border-top: 8px solid #4aaaa5;
+    position: fixed;
+    background-color: #4aaaa5;
+    left: 0;
+    bottom: 0;
+    color: white;
+    margin-top: 15px;
 }
+
+/*footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: teal;
+    color: white;
+    text-align: center;
+}*/
+
+
 .box {
     width: 960px;
     margin: 0 auto;
@@ -160,6 +196,8 @@ video code:
 
 #Couch-seal {
     float: left;
+    margin-top: 30px;
+    margin-left: 15px;
 }
 /*Adding the float on the image, helped the paragraph on the index page to
 fit on the right hand side easily. Before then, it was being pushed down and 
@@ -179,3 +217,19 @@ I also had a div wrapping this text, and then removed it.*/
 }
 
 */
+
+@media screen and (max-width: 768px) {
+    /* The body's bg color will be #333 */
+    body {
+        background-color: #333;
+    }
+    #Couch-seal {
+        width: 
+    }
+    p {
+        float: left;
+        margin: 5px;
+        margin-top: 35px;
+    }
+  
+}
