@@ -8,7 +8,7 @@ if padding/border/margin change. */
 
 body {
     background-image: url("paper.gif");
-    background-color: #cccccc;
+    background-color: #36454f;
 }
 /*Header*/ 
 
@@ -179,7 +179,7 @@ footer .box {
     text-align: center;
     bottom: 20px;
     padding: 15px;
-    width: 100%;
+    width: 83%;
     line-height: 30px;
     margin-bottom: 0;
     font-weight: 300;
@@ -187,6 +187,8 @@ footer .box {
 
 .project {
     display: inline-block;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 /*I meant to organize two images per row, and add the text on top of each image, 
@@ -229,13 +231,49 @@ I also had a div wrapping this text, and then removed it.*/
     body {
         background-color: #333;
     }
+    #main-box1 {
+        padding-top: 15px;
+        background: beige;
+        margin-left: auto;
+        width: 60%;
+        height: 2000px;
+    }
     #Couch-seal {
-        width: 
+        width: 160px;
+        height: 250px;
     }
     p {
         float: left;
         margin: 5px;
         margin-top: 35px;
+    }
+
+    #main-box2 {
+        padding-top: 15px;
+        background: beige;
+        margin-left: auto;
+        width: 50%;
+        max-width: 960px;
+        height: 1700px;
+    }
+    .project .text2 {
+        color: teal;
+        background: purple;
+        text-align: center;
+        bottom: 20px;
+        padding: 15px;
+        width: 83%;
+        line-height: 30px;
+        margin-bottom: 0;
+        font-weight: 300;
+    }
+
+    #main-box3 {
+        padding-top: 15px;
+        background: beige;
+        margin-left: auto;
+        width: 70%;
+        height: 450px;
     }
     #form #message{
         width: 250px;
@@ -247,5 +285,8 @@ I also had a div wrapping this text, and then removed it.*/
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         color: grey;
     }
-
+    /*.project {
+        display: inline-block;
+    }*/
+    
 }
