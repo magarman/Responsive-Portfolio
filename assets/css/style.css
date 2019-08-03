@@ -3,41 +3,25 @@
     box sizing: border-box;
 }
 
-/* Allow my boxes to keep the same size regardles of whether 
-if padding/border/margin change. */
-
 body {
     background-image: url("paper.gif");
     background-color: #36454f;
 }
-/*Header*/ 
 
-/*You had margin-left: auto; and margin-right: auto; and 
-it was useless*/
+header {
+    position: static;
+}
 
 #hyperlinks {
     width: 96%;
     height: 20 px;
-    /*Before watching video on Week 2 folder, I had margin to 400 px. 
-    The values below refer to 0 top, 0 right and 30 bottom*/
     margin: 0 0 5px;
     background: beige;
     padding: 20px;
     border-bottom: 1px solid grey;
     overflow: auto;
-    /*z-index: 99; was on the video, but it didn't change my shell when I tried it*/
     padding-bottom: 0%;
 }
-
-/*TIP: Margin set to "0 auto;" centers everything.*/
-
-/*A note on using width and max-width: assigning an element 
-a width property gives it its definitive, end-all-be-all width. 
-Like stating that "element X's width is Y". Assigning an element 
-the max-width property, however, is stating that "element X's 
-width CANNOT be MORE than Y, but CAN be LESS than Y". Thus, if/when 
-you assign an element just a max-width property, it will simply take 
-up as much space as necessary to wrap around the element(s) contained within it.*/
 
 #name {
     color: beige;
@@ -52,13 +36,6 @@ up as much space as necessary to wrap around the element(s) contained within it.
     text-align: center
 }
 
-/* Initially, I had the following properties with different values and those did not 
-work, this came up as simple bold letters with a highlighted-like looking box. 
-#name {
-font-color: beige;
-font-size: 25px;
-font-family: Arial, Helvetica, sans-serif;
-}*/
 
 nav {
     float: right;
@@ -66,8 +43,6 @@ nav {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: grey;
 }
-
-/* You could also style nav a or even nav a:first-child */
 
 h1, h2 {
     font-family: "Gill Sans", sans-serif;
@@ -97,10 +72,6 @@ p {
     margin-right: 35%;
     font-size: 130%;
     margin-bottom: 30px;
-}
-
-#main-box {
-    
 }
 
 #main-box1 {
@@ -157,16 +128,6 @@ footer .box {
     height: 250px;
 }
 
-/*footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: teal;
-    color: white;
-    text-align: center;
-}*/
-
 .box {
     width: 960px;
     margin: 0 auto;
@@ -191,43 +152,137 @@ footer .box {
     margin-right: 15%;
 }
 
-/*I meant to organize two images per row, and add the text on top of each image, 
-but that became complex and I couldn't include that.
-video code:
-.auth-image {
-    width: 200px;
-    height: auto;
-    margin-top: 10px;
-    float: left;
-    margin: right;
-}*/
-
 #Couch-seal {
     float: left;
     margin-top: 30px;
     margin-left: 15px;
 }
-/*Adding the float on the image, helped the paragraph on the index page to
-fit on the right hand side easily. Before then, it was being pushed down and 
-modifying margin/padding, etc, did not help.
-I also had a div wrapping this text, and then removed it.*/
 
-/*Google the meaning of this:
-.work {
-    width: 274px;
-    overflow: auto;
-    position: relative;
-    float: left;
-    margin: 20px 0 25px;
+@media screen and (max-width: 640px) {
+
+    body {
+        background-color: #333;
+    }
+    #main-box1 {
+        padding-top: 15px;
+        background: beige;
+        margin-left: auto;
+        width: 60%;
+        height: 2000px;
+    }
+    #Couch-seal {
+        width: 200px;
+        height: 350px;
+    }
+    p {
+        float: left;
+        margin: 5px;
+        margin-top: 35px;
+    }
+
+    #main-box2 {
+        padding-top: 15px;
+        background: beige;
+        margin-left: auto;
+        width: 50%;
+        max-width: 960px;
+        height: 1700px;
+    }
+    .project .text2 {
+        color: teal;
+        background: purple;
+        text-align: center;
+        bottom: 20px;
+        padding: 15px;
+        width: 83%;
+        line-height: 30px;
+        margin-bottom: 0;
+        font-weight: 300;
+    }
+
+    #main-box3 {
+        padding-top: 15px;
+        background: beige;
+        margin-left: auto;
+        width: 70%;
+        height: 450px;
+    }
+    #form #message{
+        width: 250px;
+        height: 125px;
+    }
+    nav {
+        float: left;
+        margin-top: 30px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: grey;
+    }
+    
 }
-.work:nth-child(even) {
-    margin-right: 40px;
+
+@media screen and (max-width: 768px) {
+
+    body {
+        background-color: #333;
+    }
+    #main-box1 {
+        padding-top: 15px;
+        background: beige;
+        margin-left: auto;
+        width: 60%;
+        height: 2000px;
+    }
+    #Couch-seal {
+        width: 350px;
+        height: 500px;
+    }
+    p {
+        float: left;
+        margin: 5px;
+        margin-top: 35px;
+    }
+
+    #main-box2 {
+        padding-top: 15px;
+        background: beige;
+        margin-left: auto;
+        width: 50%;
+        max-width: 960px;
+        height: 1700px;
+    }
+    .project .text2 {
+        color: teal;
+        background: purple;
+        text-align: center;
+        bottom: 20px;
+        padding: 15px;
+        width: 83%;
+        line-height: 30px;
+        margin-bottom: 0;
+        font-weight: 300;
+    }
+
+    #main-box3 {
+        padding-top: 15px;
+        background: beige;
+        margin-left: auto;
+        width: 70%;
+        height: 450px;
+    }
+    #form #message{
+        width: 250px;
+        height: 125px;
+    }
+    nav {
+        float: left;
+        margin-top: 30px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: grey;
+    }
+    
 }
+@media screen and (max-width: 980px) {
 
-*/
-
-@media screen and (max-width: 725px) {
-    /* The body's bg color will be #333 */
     body {
         background-color: #333;
     }
@@ -285,8 +340,5 @@ I also had a div wrapping this text, and then removed it.*/
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         color: grey;
     }
-    /*.project {
-        display: inline-block;
-    }*/
     
 }
